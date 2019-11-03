@@ -1,0 +1,26 @@
+{
+  "name": "analizator",
+  "version": "1.0.0",
+  "description": "analizator temperature",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boltwest/analizator.git"
+  },
+  "keywords": [
+    "arduino",
+    "nodejs"
+  ],
+  "author": "Igor Gramovich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boltwest/analizator/issues"
+  },
+  "homepage": "https://github.com/boltwest/analizator#readme",
+  "dependencies": {
+    "serialport": "^8.0.5"
+  }
+}

@@ -87,10 +87,11 @@ void analyze() {
 }
 
 void report() {
-    Serial.println("report mode start");
+    // Serial.println("report mode start");
     digitalWrite(LED, HIGH);
     printEeprom();
-    Serial.println("report Done");
+    // Serial.println("report Done");
+    Serial.println("end");
     digitalWrite(LED, LOW);
 }
 
@@ -104,6 +105,8 @@ void clearEeprom() {
 void printEeprom() {
     for (int i = 0; i <= COUNT_INDICATION; i++)
     {
+        Serial.print((long)periodTime * i);
+        Serial.print(":");
         Serial.println(decode(EEPROM.read(i)));
     }
 }
